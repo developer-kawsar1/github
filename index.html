@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Github user</title>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+    
+    body{
+      min-height: 100vh;
+      width: 100%;
+      background: #141c2f;
+      display: flex;
+      padding-top: 100px;
+      justify-content: center;
+      color:#fff;
+      
+    }
+    .main{
+      width: 90%;
+      max-width: 600px;
+    }
+    
+    .top{
+      display: flex;
+      
+      justify-content: space-between;
+    }
+    .search-box{
+      margin-top: 10px;
+      position: relative;
+    }
+    .form-control{
+      display: block;
+      width: 100%;
+      background: #1f2a48;
+      border: none;
+      padding: 15px 10px;
+      outline: 0;
+      color: #fff;
+      border-radius: 5px;
+      
+    }
+    .search-btn{
+      background:#0878f6;
+      border: none;
+      padding: 12px 10px;
+      position: absolute;
+      right: 5px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #fff;
+      border-radius: 5px;
+      top: 3px;
+    }
+   
+   
+   /* search box */
+   
+   .info-box{
+     background: #1f2a48;
+     padding: 5px;
+     margin-top: 10px;
+     border-radius: 5px;
+     position: relative;
+     display: flex;
+   }
+   .left{
+     width: 25%;
+     margin-right: 10px;
+     
+   }
+    .left img{
+      width: 80px;
+      height: 80px;
+      display: block;
+      border-radius: 50%;
+    }
+    .right{
+      
+    }
+    
+    
+    .top-info{
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+    }
+    .top-info  .date{
+      text-align: right;
+    }
+    
+    /* numbers */
+    .numbers{
+      width: 90%;
+      display: flex;
+      background: #141c2f;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 20px 0;
+      justify-content: space-between;
+    }
+    .numbers p:nth-child(2){
+      font-size: 30px;
+      text-align: center;
+      
+    }
+    
+    
+    /* more info */
+    .more-info{
+      display: flex;
+      justify-content: space-between;
+      padding-right: 20px;
+    }
+    .more-info p{
+      margin-bottom: 10px;
+    }
+    ::placeholder{
+      color: #ccc;
+    }
+    
+    .custom-icon{
+      position: absolute;
+      left: 15px;
+      top: 15px;
+    }
+    .fa-map-marker{
+      margin-right: 5px;
+      font-weight: bold;
+    }
+  </style>
+ 
+  
+</head>
+
+<body>
+<div class="main">
+  <div class="top">
+    <h3>Dev finder</h3>
+    <div>
+      Light <i class="fa fa-sun-o"></i>
+    </div>
+  </div>
+  <!-- search box -->
+  <div class="search-box">
+    
+    <form action="" id="myForm">
+    <input type="text" class="form-control" placeholder="&#xF002;     Search Github Username" style="font-family:Arial, FontAwesome; font-weight: bold " id="search">
+
+    <button class="search-btn">Search</button>
+        </form>
+  </div>
+  
+  <!-- info box -->
+  <div class="info-box">
+    <div class="left">
+      <img src="images (2).jpeg" alt="" id="img">
+    </div>
+    <div class="right">
+     <div class="top-info">
+       <div>
+        <h2 id="name">The octocat</h2>
+        <p id="login">#link</p>
+        <p id="bio">This profile has no bio</p>
+     </div>
+     <div>
+       <p class="date" id="date">Joined 25 jan 2001</p>
+     </div>
+     </div>
+     
+     <!-- numbers info -->
+     
+     
+     <div class="numbers">
+       <div>
+         <p>Repo</p>
+         <p id="repo">8</p>
+       </div>
+              <div>
+         <p>Followers</p>
+         <p id="followers">8</p>
+       </div>
+              <div>
+         <p>Following</p>
+         <p id="following">8</p>
+       </div>
+     </div>
+     
+     <!-- more info -->
+      <div class="more-info">
+        <div class="half-width">
+          <p><i class="fa fa-map-marker"></i> <span id="location"></span></p>
+         <p><i class="fa fa-building-o"></i> <span id="company"></span></p>
+        </div>
+        <div class="half-width">
+        <p><i class="fa fa-twitter"></i> <span id="twitter"> </span></p>
+        <p><i class="fa fa-link"></i> <span id="blog"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+  <script src="main.js"></script>
+</body>
+</html>
